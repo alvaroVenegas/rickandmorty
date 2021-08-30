@@ -1,0 +1,9 @@
+<div *ngIf="character.origin">
+    <h1>{{character.name | markText : 'Rick'}}</h1>
+    <img src="{{character.image}}">
+    <p>Specie: {{character.species}}</p>
+    <p>Gender: {{character.gender}}</p>
+    <p>Status: {{character.status}}</p>
+    <p>original Planet: {{character.origin.name}}</p>
+    <p>Localization: {{character.location.name}}</p>
+</div>

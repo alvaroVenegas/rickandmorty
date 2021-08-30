@@ -1,0 +1,16 @@
+
+body[data-theme = 'light']{
+    --color-primary: rgb(4,166,191);
+    --color-primay-active: rgb(4,166,191);
+    --color-grey: #333333;
+    --color-background: #bbf5fe;
+    --color-black: black;
+}
+
+body[data-theme = 'dark']{
+    --color-primary: rgb(28, 13, 83);
+    --color-primay-active: rgb(29, 24, 95);
+    --color-grey: #333333;
+    --color-background: #224a61;
+    --color-black: black;
+}

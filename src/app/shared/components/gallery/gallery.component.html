@@ -1,0 +1,24 @@
+<div class="c-gallery">
+    <div class="row">
+        <div *ngFor="let item of items" class="col-12 col-md-6 col-lg-4">
+
+            <figure>
+                <figcaption class="c-gallery__text"><a routerLink="{{item.id}}">{{item.name | markText : 'Rick'}}</a></figcaption>
+                <div *ngIf = "item.image">
+                    <a routerLink="{{item.id}}">
+                    <img src="{{item.image}}" class="c-gallery__img">
+                    </a>
+                </div>
+                <div>
+                </div>
+            </figure>
+            <div class="c-button">
+                <button (click)="addNewFavorites(item)" class="c-button--add">Add Favorite</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<a routerLink="/users/{{user.id}}">{{user.name}}</a>
+el router link al final es una ruta = ../ruta/
+-->

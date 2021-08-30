@@ -1,0 +1,13 @@
+<div class="c-gallery">
+    <div class="row">
+        <div *ngFor="let item of items" class="col-12 col-md-6 col-lg-4">
+            <div class="c-gallery__text">
+                <a routerLink="{{item.id}}">{{item.name}}</a>
+            </div>
+            <div>
+                <p>{{item.type}}</p>
+                <p>{{item.dimension}}</p>
+            </div>
+        </div>
+    </div>
+</div>

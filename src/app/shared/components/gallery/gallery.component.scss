@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.c-gallery{
+
+    &__img{
+        width: 100%;
+        border: 6px solid var(--color-background);
+        &:hover{
+            border:6px solid var(--color-primary);
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 32px;
+            border-radius: 50%;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        font-size: 24px;
+        @include media-breakpoint-up(lg) {
+            font-size: 32px;
+        }
+    }
+    &__item{
+        cursor: pointer;
+    }
+}
+
+
+.c-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--add{
+        font-family: 'arial';
+        background-color: transparent;
+        border: 6px solid var(--color-background);
+        font-size: 20px;
+        text-transform: uppercase;
+        //font-family: Arial;
+        color: var(--color-grey);
+        padding: 16px;
+        text-decoration: none;
+        font-weight: 700;
+        display: inline-block;
+        &--active{
+            background-color: var(--color-primary);
+        }
+        &:hover{
+            border:6px solid var(--color-primary);
+            cursor: pointer;
+        }
+    }
+   
+}

@@ -1,0 +1,34 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.c-gallery{
+
+    &__img{
+        width: 100%;
+        border: 6px solid var(--color-primary);
+        &:hover{
+            border:6px solid var(--color-black);
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 32px;
+            border-radius: 50%;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        font-size: 24px;
+        @include media-breakpoint-up(lg) {
+            font-size: 32px;
+        }
+    }
+    &__item{
+        cursor: pointer;
+    }
+}
